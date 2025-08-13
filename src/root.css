@@ -1,0 +1,14 @@
+:root{
+    --theme-provider-background : none ;
+    --theme-provider-forground : none ;
+    --theme-provider-currentLine : none ;
+    --theme-provider-selection : none ;
+    --theme-provider-comment : none ; 
+    --theme-provider-cyan : cyan ;
+    --theme-provider-green : green ;
+    --theme-provider-orange : orange ; 
+    --theme-provider-pink : pink ;
+    --theme-provider-purple : purple ;
+    --theme-provider-red : red ;
+    --theme-provider-yellow : yellow ;
+}

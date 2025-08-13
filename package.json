@@ -1,0 +1,25 @@
+{
+  "name": "themes-provider",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "themes",
+    "colors",
+    "provider"
+  ],
+  "homepage": "https://github.com/zakarialaoui10/themes-provider#readme",
+  "bugs": {
+    "url": "https://github.com/zakarialaoui10/themes-provider/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zakarialaoui10/themes-provider.git"
+  },
+  "license": "MIT",
+  "author": "zakaria elalaoui",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
