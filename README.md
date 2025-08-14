@@ -1,12 +1,9 @@
 # Themes Provider
-Universal, Tree-Shakeable Theme Management, that converts JavaScript objects into CSS variables on `:root`, optionally namespaced. 
-It supports predefined or custom themes, allows valid CSS properties or custom keys, and works without state management or rerenders, making it compatible with all frameworks.
-You can either destructure the keys from the useRoot object or reference the CSS variables directly via `var(--namespace-key)` in your styles, depending on how your framework handles styling.
-
+Universal, Tree-Shakeable, Framework-agnostic Theme Management, that converts JavaScript objects into CSS variables on `:root`, optionally namespaced. 
 ## Features
 - ***🌍 Framework-Agnostic :***
     - No framework lock-in — your themes work anywhere.
-    - Works with `Zikojs`, `Vanjs`, `React`, `Preact`, `Svelte`, `Vue`, `Solid`, `Vanilla JS`, and more.
+    - Works with :`Zikojs`, `Vanjs`, `React`, `Preact`, `Svelte`, `Vue`, `Solid`, `Vanilla JS`, and more.
 - ***⚡ Tree-Shakeable Themes :***
     - Import only the themes you actually use — dead code is eliminated during bundling.
     - Perfect for apps with multiple lightweight theme packs.
@@ -21,6 +18,20 @@ You can either destructure the keys from the useRoot object or reference the CSS
 - 🛠 Simple API
 <!-- - ♻ Multiple Usage Modes -->
 
+## Demos
+- **`Zikojs :`** 
+- **`Vanjs :`** 
+<!-- - **`React :`** 
+- **`Preact :`** 
+- **`Solid :`** 
+- **`Svelte :`** 
+- **`Vue :`** 
+- **`Astro :`**  
+- **`Angular :`** 
+- **`Qwik :`**  
+- **`Alpine :`** 
+- **`Htmx :`**  
+- **`Marko :`**  -->
 ## Install
 ```bash
 npm i themes-provider
