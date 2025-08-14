@@ -1,17 +1,24 @@
 body{
   margin: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 button{
   min-width: 140px;
   height: 40px;
   font-size: 1.2em;
-  background: none;
   cursor: pointer;
   border-radius: 4px;
   border: 3px darkblue solid;
+  color : var(--background);
+  background : var(--foreground)
+
 }
 button:hover{
-  background: white;
+  color : var(--foreground);
+  background : var(--background);
+}
+p{
+  font-size: 1.1em;
 }
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

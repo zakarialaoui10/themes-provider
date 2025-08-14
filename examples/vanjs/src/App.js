@@ -3,19 +3,20 @@ import './App.css';
 import {useTheme} from 'themes-provider'
 
 import { Dracula, Aylin, AzureBlue } from 'themes-provider/themes/dark';
-const T = useTheme(Dracula)
-const { background, currentLine, foreground, purple} = T
-const { button, div, h1, h2, img, p, a, ul, li, strong, em, u } = van.tags;
+import { CozyCottonCandy } from 'themes-provider/themes/light';
+const T = useTheme(CozyCottonCandy)
+const { background, foreground, purple, cyan} = T
+const { button, div, h1, h2, ul, li, strong, em, u, p } = van.tags;
 
 const Item = (title , ...elements) => li(
     {style : `
       font-size : 1.2em;
-      color : ${currentLine};
+      color : ${purple};
       `}, 
     u(strong(title)),
     ...elements
 )
-const SubItem = (item) => li({style : 'font-size : 1.1em'},em(item))
+const SubItem = (item) => li({style : `font-size : 1.1em; color : ${cyan};` },em(item))
 
 const ButtonsGroup = (...buttons) => div(
   { style : `
@@ -33,12 +34,19 @@ const Button = (Text, Theme) => button({ onclick : () => T.use(Theme) },Text)
 export const App = () => {
   
   return div(
-    {style : `background : ${purple}; padding : 2em;`},
+    {style : `background : ${background}; color : ${foreground}; padding : 2em; `},
     h1('Themes Provider'),
+    h2('What is It and How it works ?'),
+    p(`
+      themes-provider is a framework-agnostic themes manager that converts JavaScript objects into CSS variables on :root, optionally namespaced. 
+      It supports predefined or custom themes, allows valid CSS properties or custom keys, and works without state management or rerenders, making it compatible with all frameworks.
+      You can either destructure the keys from the useRoot object or reference the CSS variables directly via var(--namespace-key) in your styles, depending on how your framework handles styling.
+    `),
     ButtonsGroup(
       Button('Dracula', Dracula),
       Button('Aylin', Aylin),
-      Button('AzureBlue', AzureBlue),
+      Button('Azure Blue', AzureBlue),
+      Button('Cozy Cotton Candy', CozyCottonCandy),
     ),
     h2(' Features '),
     ul(

@@ -1,1 +1,1 @@
-export { default as cozyCottonCandy} from "./cozy-Cotton-candy.json"
+export { default as CozyCottonCandy} from "./cozy-cotton-candy.json"

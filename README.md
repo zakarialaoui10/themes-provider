@@ -1,5 +1,7 @@
-# themes-provider
-Universal, Tree-Shakeable Theme Management
+# Themes Provider
+Universal, Tree-Shakeable Theme Management, that converts JavaScript objects into CSS variables on `:root`, optionally namespaced. 
+It supports predefined or custom themes, allows valid CSS properties or custom keys, and works without state management or rerenders, making it compatible with all frameworks.
+You can either destructure the keys from the useRoot object or reference the CSS variables directly via `var(--namespace-key)` in your styles, depending on how your framework handles styling.
 
 ## Features
 - ***🌍 Framework-Agnostic :***
