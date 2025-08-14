@@ -20,7 +20,7 @@ Universal, Tree-Shakeable, Framework-agnostic Theme Management, that converts Ja
 
 ## Demos
 - **`Zikojs :`** 
-- **`Vanjs :`** https://stackblitz.com/edit/zakarialaoui10-themes-provider-fundxkwo?file=README.md
+- **`Vanjs :`** https://stackblitz.com/edit/zakarialaoui10-themes-provider-fundxkwo?file=src%2FApp.js
 <!-- - **`React :`** 
 - **`Preact :`** 
 - **`Solid :`** 
@@ -37,4 +37,54 @@ Universal, Tree-Shakeable, Framework-agnostic Theme Management, that converts Ja
 npm i themes-provider
 ```
 
-## Usage
+## Process
+
+- Themes Declarations 
+```js
+const Themes = {
+    T1 : {
+        border : '1px darkblue solid',
+        color : 'darkblue',
+        bg : 'white'
+    },
+    T2 : {
+        border : '1px darkblue solid',
+        color : 'darkblue',
+        bg : 'white'
+    }
+}
+```
+
+- Applying a Theme to :root with useTheme
+
+```js
+import {useTheme} from 'themes-provider'
+const T = useTheme(Themes.T1, {namespace : th})
+```
+This assigns the properties from `Themes.T1` as CSS variables on `:root`, It's equivalent to:
+```css
+:root{
+   --tt-border : 1px darkblue solid;
+   --tt-color : darkblue;
+   --tt-bg : white;
+ }
+```
+- Applying the style
+You can use two approaches:
+  - Using destructuring (when applying styles directly in JavaScript)
+  ```js
+  const {border, color, bg} = T
+  ```
+  - Using Css Variable derictly 
+  ```css
+  [selector]{
+    border : var(--tt-border);
+  }
+  ```
+The choice of approach depends on the targeted framework itself.
+
+- Updating the theme dynamically 
+```js
+A.use(Themes.T2) 
+```
+This instantly updates the styles applied to :root, without requiring state management or component re-rendering.
