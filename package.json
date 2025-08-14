@@ -1,15 +1,21 @@
 {
   "name": "themes-provider",
   "version": "0.1.0",
-  "description": "Universal, Tree-Shakeable Theme Management",
+  "description": "Universal, Tree-Shakeable Themes Provider",
   "keywords": [
     "themes",
     "colors",
     "provider",
-    "svelte"
+    "zikojs",
+    "vanjs",
+    "svelte",
+    "preact",
+    "solid"
   ],
-  "exports":{
-    "./*" : "./src/providers/*/index.js"
+  "exports": {
+    "." : "./src/index.js",
+    "./*": "./src/providers/*/index.js",
+    "./themes-root": "./src/themes-root.css"
   },
   "homepage": "https://github.com/zakarialaoui10/themes-provider#readme",
   "bugs": {
@@ -22,7 +28,6 @@
   "license": "MIT",
   "author": "zakaria elalaoui",
   "type": "module",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
