@@ -4,7 +4,6 @@ Universal, Tree-Shakeable, Framework-agnostic Theme Management, that converts Ja
 
 ![Themes Provider](demo.gif)
 
-![Themes Provider](demo-dep.gif)
 </div>
 
 ## Features
