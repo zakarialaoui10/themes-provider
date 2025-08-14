@@ -1,20 +1,45 @@
 import van from 'vanjs-core';
 import './App.css';
 import {useTheme} from 'themes-provider'
-import Dracula from 'themes-provider/themes/dark/dracula'
-import Aylin from 'themes-provider/themes/dark/aylin'
 
-const {background, currentLine, foreground, purple} = useTheme(Dracula)
-const { div, h1, h2, img, p, a, ul, li } = van.tags;
+import { Dracula, Aylin, AzureBlue } from 'themes-provider/themes/dark';
+const T = useTheme(Dracula)
+const { background, currentLine, foreground, purple} = T
+const { button, div, h1, h2, img, p, a, ul, li, strong, em, u } = van.tags;
 
-const Item = (...elements) => li({style : `color : ${currentLine}`},...elements)
-const SubItem = (...elements) => li(...elements)
+const Item = (title , ...elements) => li(
+    {style : `
+      font-size : 1.2em;
+      color : ${currentLine};
+      `}, 
+    u(strong(title)),
+    ...elements
+)
+const SubItem = (item) => li({style : 'font-size : 1.1em'},em(item))
+
+const ButtonsGroup = (...buttons) => div(
+  { style : `
+    border : 2px darkblue solid;
+    display : flex;
+    flex-wrap : wrap;
+    justify-content: space-around;
+    padding : 10px;
+    gap : 10px;
+    `},
+  ...buttons
+)
+const Button = (Text, Theme) => button({ onclick : () => T.use(Theme) },Text)
 
 export const App = () => {
   
   return div(
-    {style : `background : ${purple};`},
+    {style : `background : ${purple}; padding : 2em;`},
     h1('Themes Provider'),
+    ButtonsGroup(
+      Button('Dracula', Dracula),
+      Button('Aylin', Aylin),
+      Button('AzureBlue', AzureBlue),
+    ),
     h2(' Features '),
     ul(
       Item('🌍 Framework-Agnostic : ',

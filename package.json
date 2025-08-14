@@ -16,6 +16,7 @@
     "." : "./src/index.js",
     "./*": "./src/providers/*/index.js",
     "./themes-root": "./src/themes-root.css",
+    "./themes/dark" : "./src/themes/dark/index.ts",
     "./themes/dark/*" : "./src/themes/dark/*.json"
   },
   "homepage": "https://github.com/zakarialaoui10/themes-provider#readme",
