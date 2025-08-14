@@ -1,7 +1,7 @@
 {
   "name": "themes-provider",
   "version": "0.0.0",
-  "description": "",
+  "description": "Universal, Tree-Shakeable Theme Management",
   "keywords": [
     "themes",
     "colors",
