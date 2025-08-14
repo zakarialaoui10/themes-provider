@@ -1,5 +1,9 @@
 # Themes Provider
-Universal, Tree-Shakeable, Framework-agnostic Theme Management, that converts JavaScript objects into CSS variables on `:root`, optionally namespaced. 
+Universal, Tree-Shakeable, Framework-agnostic Theme Management, that converts JavaScript objects into CSS variables on `:root`, optionally namespaced.
+<div align="center"> 
+
+![Themes Provider](demo.gif)
+</div>
 ## Features
 - ***🌍 Framework-Agnostic :***
     - No framework lock-in — your themes work anywhere.
