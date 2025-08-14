@@ -1,6 +1,6 @@
 {
   "name": "themes-provider",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Universal, Tree-Shakeable Themes Provider",
   "keywords": [
     "themes",
@@ -19,7 +19,8 @@
     "./themes/dark" : "./src/themes/dark/index.ts",
     "./themes/dark/*" : "./src/themes/dark/*.json",
     "./themes/light" : "./src/themes/light/index.ts",
-    "./themes/light/*" : "./src/themes/light/*.json"
+    "./themes/light/*" : "./src/themes/light/*.json",
+    "./themes" : "./src/themes/index.ts"
   },
   "homepage": "https://github.com/zakarialaoui10/themes-provider#readme",
   "bugs": {
