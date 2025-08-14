@@ -1,12 +1,16 @@
 {
   "name": "themes-provider",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Universal, Tree-Shakeable Theme Management",
   "keywords": [
     "themes",
     "colors",
-    "provider"
+    "provider",
+    "svelte"
   ],
+  "exports":{
+    "./*" : "./src/providers/*/index.js"
+  },
   "homepage": "https://github.com/zakarialaoui10/themes-provider#readme",
   "bugs": {
     "url": "https://github.com/zakarialaoui10/themes-provider/issues"
