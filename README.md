@@ -3,6 +3,8 @@ Universal, Tree-Shakeable, Framework-agnostic Theme Management, that converts Ja
 <div align="center"> 
 
 ![Themes Provider](demo.gif)
+
+![Themes Provider](demo-dep.gif)
 </div>
 
 ## Features
