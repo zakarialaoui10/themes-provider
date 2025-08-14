@@ -4,6 +4,7 @@ Universal, Tree-Shakeable, Framework-agnostic Theme Management, that converts Ja
 
 ![Themes Provider](demo.gif)
 </div>
+
 ## Features
 - ***🌍 Framework-Agnostic :***
     - No framework lock-in — your themes work anywhere.
