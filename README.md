@@ -25,8 +25,8 @@ Universal, Tree-Shakeable, Framework-agnostic Theme Management, that converts Ja
 <!-- - ♻ Multiple Usage Modes -->
 
 ## Demos
-- **`Zikojs :`** 
-- **`Vanjs :`** https://stackblitz.com/edit/zakarialaoui10-themes-provider-fundxkwo?file=src%2FApp.js
+<!-- - **`Zikojs :`**  -->
+- **`Vanjs :`** https://stackblitz.com/fork/github/zakarialaoui10/themes-provider/tree/main/examples/vanjs?file=src%2FApp.js
 <!-- - **`React :`** 
 - **`Preact :`** 
 - **`Solid :`** 
