@@ -13,14 +13,14 @@
     "solid"
   ],
   "exports": {
-    "." : "./src/index.js",
+    ".": "./src/index.js",
     "./*": "./src/providers/*/index.js",
     "./themes-root": "./src/themes-root.css",
-    "./themes/dark" : "./src/themes/dark/index.ts",
-    "./themes/dark/*" : "./src/themes/dark/*.json",
-    "./themes/light" : "./src/themes/light/index.ts",
-    "./themes/light/*" : "./src/themes/light/*.json",
-    "./themes" : "./src/themes/index.ts"
+    "./themes/dark": "./src/themes/dark/index.ts",
+    "./themes/dark/*": "./src/themes/dark/*.json",
+    "./themes/light": "./src/themes/light/index.ts",
+    "./themes/light/*": "./src/themes/light/*.json",
+    "./themes": "./src/themes/index.ts"
   },
   "homepage": "https://github.com/zakarialaoui10/themes-provider#readme",
   "bugs": {
@@ -37,6 +37,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "ziko": "^0.36.2"
+    "ziko": "^0.40.1"
   }
 }
